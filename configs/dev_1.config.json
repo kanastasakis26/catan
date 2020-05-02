@@ -1,0 +1,10 @@
+{
+    "db_path": "/Users/mm18262/SideProjects/Catan/dev_experiment.sqlite",
+    "experiments": [
+        {
+            "trials": 10,
+            "rolls": 1,
+            "settlement_pattern": "star"
+        }
+    ]
+}

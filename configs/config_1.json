@@ -1,0 +1,36 @@
+{
+    "_db_path": ":memory:",
+    "db_path": "/Users/mm18262/SideProjects/Catan/experiment_config_1.sqlite",
+    "experiments": [
+        {
+            "trials": 1000,
+            "rolls": 10,
+            "settlement_pattern": "star"
+        },
+        {
+            "trials": 1000,
+            "rolls": 10,
+            "settlement_pattern": "random"
+        },
+        {
+            "trials": 1000,
+            "rolls": 10,
+            "settlement_pattern": "perimeter"
+        },
+        {
+            "trials": 1000,
+            "rolls": 10,
+            "settlement_pattern": "star_robber"
+        },
+        {
+            "trials": 1000,
+            "rolls": 10,
+            "settlement_pattern": "random_robber"
+        },
+        {
+            "trials": 1000,
+            "rolls": 10,
+            "settlement_pattern": "perimeter_robber"
+        }
+    ]
+}

@@ -35,13 +35,15 @@ def test_settlement_pattern_difference(df_full):
     for c in combinations:
         df_pattern_0 = df_full[df_full['settlement_pattern'] == c[0]]
         df_pattern_1 = df_full[df_full['settlement_pattern'] == c[1]]
+        p_test_value = 0.01
         ttest_result = stats.ttest_ind(df_pattern_1['resource_count'], df_pattern_0['resource_count'], equal_var=False)
         ttest_results_list.append(
                 {
                 'pattern_a': c[0],
                 'pattern_b': c[1],
                 'statistic': ttest_result.statistic,
-                'pvalue': ttest_result.pvalue
+                'pvalue': ttest_result.pvalue,
+                f'significant_at_{p_test_value}': p_test_value > ttest_result.pvalue
             }
         )
     return pd.DataFrame.from_records(ttest_results_list)

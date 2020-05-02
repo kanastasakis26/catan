@@ -7,7 +7,7 @@ from catan.analyze import (
     test_settlement_pattern_difference
 )
 
-import matplotlib.pyplot as plt
+import numpy as np
 
 @click.group()
 def cli():

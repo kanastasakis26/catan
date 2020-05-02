@@ -16,6 +16,21 @@
             "trials": 100,
             "rolls": 100,
             "settlement_pattern": "perimeter"
+        },
+        {
+            "trials": 100,
+            "rolls": 100,
+            "settlement_pattern": "star_robber"
+        },
+        {
+            "trials": 100,
+            "rolls": 100,
+            "settlement_pattern": "random_robber"
+        },
+        {
+            "trials": 100,
+            "rolls": 100,
+            "settlement_pattern": "perimeter_robber"
         }
     ]
 }

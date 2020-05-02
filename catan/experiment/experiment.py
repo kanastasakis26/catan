@@ -24,7 +24,7 @@ class Experiment:
     def __init__(self, trial_class, n_trials=10, n_rolls=10):
         # Set the number of trials
         self.n_trials = n_trials
-        self.n_rolls = n_trials
+        self.n_rolls = n_rolls
         self.trial_class = trial_class
 
         # Create the board

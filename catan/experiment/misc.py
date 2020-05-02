@@ -7,6 +7,24 @@ def roll_dice():
     '''
     return random.randint(1,6) + random.randint(1,6)
 
+        
+def die_roll_prob(n):
+    p = 1. / 36.
+    if n == 2 or n== 12:
+        return p
+    elif n == 3 or n== 11:
+        return 2 * p
+    elif n == 4 or n== 10:
+        return 3 * p
+    elif n == 5 or n== 9:
+        return 4 * p
+    elif n == 6 or n== 7:
+        return 5 * p
+    elif n == 7:
+        return 6 * p
+    else:
+        return 0
+
 
 def search(G, root):
 
@@ -36,4 +54,3 @@ def search(G, root):
     visited = dict()
     return _search(G, root, 0)
     
-        

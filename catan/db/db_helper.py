@@ -39,14 +39,15 @@ class DBHelper:
 
         self.trial = trial
 
-    def save_trial_roll(self, roll, resource_count):
+    def save_trial_roll_bulk(self, result_list):
         """
-        roll: the sum of the faces from rolling to 6 sided dice
-        resource_count: the number of resources earned
+        result_list: List of tuples. [(roll, resource_count), ... ]
+            roll: the sum of the faces from rolling to 6 sided dice
+            resource_count: the number of resources earned
         """
-        trial_roll = TrialRoll(trial_id=self.trial.id, roll=roll, resource_count=resource_count)
+        trial_rolls = [TrialRoll(trial_id=self.trial.id, roll=x[0], resource_count=x[1]) for x in result_list]
 
-        self.session.add(trial_roll)
+        self.session.bulk_save_objects(trial_rolls)
         self.session.commit()
 
 
