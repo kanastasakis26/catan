@@ -1,0 +1,77 @@
+# Ignore everything by default.
+# REMOVING OR COMMENTING OUT THE LINE BELOW IS FORBIDDEN
+# IN ALL CIRCUMSTANCES.
+*
+
+# *************************************
+#
+#        Whitelist section
+#
+# *************************************
+
+# Permit whitelisted file extensions in all directories.
+# OPTIONAL: for added security, you may replace this whitelist
+# with targeted directory whitelists. To do this, add the lines
+# !$FOO/
+# !$FOO/**/
+# for each directory $FOO you wish to whitelist.
+# If you do not understand what this means or are not confident
+# in making such a change, then DO NOT modify the line below.
+!/**/
+
+# Permit ignore files.
+!.gitattributes
+!.gitignore
+!.helmignore
+
+# Permit these file extensions.
+!*.json
+
+## Source code files
+!*.py
+!*.sh
+!*.sql
+
+## Python
+!requirements*.in
+!requirements*.txt
+
+## Python packaging files
+!setup.cfg
+!tox*.ini
+!MANIFEST.in
+
+# *************************************
+#
+#        Blacklist section
+#
+# *************************************
+
+# would otherwise permit them.
+*.egg-info/
+.coverage/
+.eggs/
+.env/
+.hypothesis/
+.idea/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.Python/
+.ropeproject/
+.sass-cache/
+.scrapy/
+.tox/
+.venv/
+.vscode/
+build/
+develop-eggs/
+dist/
+eggs/
+ENV/
+env/
+htmlcov/
+sdist/
+__pycache__/
+
+

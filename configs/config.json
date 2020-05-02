@@ -1,0 +1,21 @@
+{
+    "_db_path": ":memory:",
+    "db_path": "/Users/mm18262/SideProjects/Catan/full_experiment.sqlite",
+    "experiments": [
+        {
+            "trials": 100,
+            "rolls": 100,
+            "settlement_pattern": "star"
+        },
+        {
+            "trials": 100,
+            "rolls": 100,
+            "settlement_pattern": "random"
+        },
+        {
+            "trials": 100,
+            "rolls": 100,
+            "settlement_pattern": "perimeter"
+        }
+    ]
+}
