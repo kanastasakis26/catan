@@ -1,4 +1,7 @@
+import os
 import click
+import pandas as pd
+
 import catan.settings as settings
 
 from catan.analyze import (
@@ -41,8 +44,19 @@ def analyze(config_path):
     settings.from_config(config_path)
     
     df = load_data()
+    descriptions = describe_settlement_pattern(df)
+    test_results = test_settlement_pattern_difference(df)
 
-    print(describe_settlement_pattern(df))
+    print(descriptions)
     print('\n')
-    print(test_settlement_pattern_difference(df))
+    print(test_results)
     print('\n')
+
+    # Create a report document
+    name = settings.DB_CONFIG['name']
+    report_path = os.path.join(settings.REPORT_DIR, f'report__{name}.xlsx')
+    writer = pd.ExcelWriter(report_path, engine='xlsxwriter')
+    descriptions.to_excel(writer, sheet_name="Descriptions")
+    test_results.to_excel(writer, sheet_name="T-Test Results")
+    writer.save()
+

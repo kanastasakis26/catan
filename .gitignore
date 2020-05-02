@@ -73,5 +73,7 @@ env/
 htmlcov/
 sdist/
 __pycache__/
+databases/
+reports/
 
 

@@ -1,5 +1,5 @@
 {
-    "db_path": "/Users/mm18262/SideProjects/Catan/dev_experiment.sqlite",
+    "db_name": "dev_experiment.sqlite",
     "experiments": [
         {
             "trials": 10,

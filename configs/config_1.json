@@ -1,6 +1,6 @@
 {
     "_db_path": ":memory:",
-    "db_path": "/Users/mm18262/SideProjects/Catan/experiment_config_1.sqlite",
+    "db_name": "experiment_config_1.sqlite",
     "experiments": [
         {
             "trials": 1000,
