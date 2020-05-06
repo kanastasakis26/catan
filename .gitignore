@@ -23,6 +23,8 @@
 !.gitattributes
 !.gitignore
 !.helmignore
+!graph-layout.png
+!patterns.png
 
 # Permit these file extensions.
 !*.json
