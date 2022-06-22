@@ -11,7 +11,7 @@ setup(
         'kiwisolver==1.2.0',
         'matplotlib==3.2.1',
         'networkx==2.4',
-        'numpy==1.18.2',
+        'numpy==1.22.0',
         'pyparsing==2.4.7',
         'python-dateutil==2.8.1',
         'six==1.14.0',
